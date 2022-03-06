@@ -16,9 +16,17 @@
     </div>
 
 
+    <div class="myclock">
+      <div class="myclock-face">
+        <div class="myhand hour-hand"></div>
+        <div class="myhand min-hand"></div>
+        <div class="myhand second-hand"></div>
+      </div>
+    </div>
+
   <style>
     html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+      background: #018DED url("https://unsplash.it/1500/1000?image=881&blur=5");
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -32,6 +40,25 @@
       flex: 1;
       min-height: 100vh;
       align-items: center;
+    }
+
+    .myclock{
+      width: 30rem;
+      height: 30rem;
+      border: 20px solid white;
+      border-radius:  50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+      box-shadow: 0 0 0 4px red, 
+                  inset 0 0 0 3px greenyellow,
+                  inset 0 0 0 10px blue,
+                  0 0 10px purple;
+                  
+      /* box-shadow: 0 0 0 4px rgba(0,0,0,0.1), 
+                  inset 0 0 0 3px #EFEFEF,
+                  inset 0 0 0 10px blue; */
+
     }
 
     .clock {
